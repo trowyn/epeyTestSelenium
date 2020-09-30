@@ -55,15 +55,15 @@ public class epeyClass {
 
    }
    public void login2() throws Exception {
-      this.driver.findElement(username).sendKeys("cgty.dk@gmail.com");
-      this.driver.findElement(password).sendKeys("123456789a");
+      this.driver.findElement(username).sendKeys("email");
+      this.driver.findElement(password).sendKeys("password");
       this.driver.findElement(login2).click();
 
       Thread.sleep(3000);
 
    }
    public void goTo() throws InterruptedException {
-      this.driver.findElement(seach).sendKeys("xiaomi mi 10");
+      this.driver.findElement(seach).sendKeys("karşılaştıralacak cihaz 1");
       this.driver.findElement(seach1).click();
       Thread.sleep(3000);
 
@@ -74,7 +74,7 @@ public class epeyClass {
 
    }
    public void goTo2()throws InterruptedException {
-      this.driver.findElement(seach).sendKeys("Huawei P40 Pro");
+      this.driver.findElement(seach).sendKeys("karşılaştıralacak cihaz 2");
       this.driver.findElement(seach1).click();
       Thread.sleep(3000);
 
@@ -92,7 +92,7 @@ public class epeyClass {
 
    }
    public void wdown() throws  InstantiationException{
-
+       
       ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,1150)");
    }
 
