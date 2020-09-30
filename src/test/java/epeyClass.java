@@ -32,7 +32,7 @@ public class epeyClass {
 
    @BeforeSuite
    public void beforeSuite() {
-      System.setProperty("webdriver.chrome.driver", "C:\\Users\\ILBER ORTAYLI\\Desktop\\Optiim\\forestRegisterTest-master\\automation_tutorial\\drivers\\chromedriver.exe");
+      System.setProperty("webdriver.chrome.driver", "C:\\Users\\ILBER ORTAYLI\\Desktop\\Selenium\\forestRegisterTest-master\\automation_tutorial\\drivers\\chromedriver.exe");
       this.driver = new ChromeDriver();
       this.driver.manage().window().maximize();
    }
