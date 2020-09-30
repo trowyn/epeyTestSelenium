@@ -27,7 +27,6 @@ public class epeyClass {
    private By comparison = By.cssSelector("[class='kiyasla kiyasla407688']");
    private By comparison2 = By.cssSelector("[class='kiyasla kiyasla413329']");
    private By button = By.cssSelector("[class='button']");
-   private By cl = By.cssSelector("[class='seviye1']");
 
 
 
@@ -88,11 +87,11 @@ public class epeyClass {
       this.driver.findElement(button).click();
 
       Thread.sleep(3000);
-      kayalim();
+      wdown();
 
 
    }
-   public void kayalim() throws  InstantiationException{
+   public void wdown() throws  InstantiationException{
 
       ((JavascriptExecutor) driver).executeScript("window.scrollBy(0,1150)");
    }
